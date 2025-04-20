@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
 
-const prefix = process.env.NODE_ENV === 'production' ? '/words-pictureslander' : '';
 
 export default function GoalsPage() {
   return (
@@ -9,7 +8,7 @@ export default function GoalsPage() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert block mx-auto"
-          src={`${prefix}/WP.svg`}
+          src="/WP.svg"
           alt="Words & Pictures Logo"
           width={180}
           height={38}
@@ -57,7 +56,7 @@ export default function GoalsPage() {
         >
           <Image
             aria-hidden
-            src={`${prefix}/file.svg`}
+            src="/file.svg"
             alt="File icon"
             width={16}
             height={16}
@@ -72,7 +71,7 @@ export default function GoalsPage() {
         >
           <Image
             aria-hidden
-            src={`${prefix}/bsky.svg`}
+            src="/bsky.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -88,7 +87,7 @@ export default function GoalsPage() {
           <Image
             className=""
             aria-hidden
-            src={`${prefix}/kofi.svg`}
+            src="/kofi.svg"
             alt="Globe icon"
             width={16}
             height={16}
