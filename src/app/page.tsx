@@ -81,7 +81,7 @@ export default function Home() {
                 <a href="https://x.com/raccoon0ncaf" target="_blank" rel="noopener noreferrer">
                   <Image
                     className="border-5 border-gray-400 hover:scale-110 transition-transform duration-300"
-                    src="/winner22023.png"
+                    src="/winner22023.PNG"
                     alt="Winner 2"
                     width={100}
                     height={100}
