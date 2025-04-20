@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from 'next/link';
 
+const prefix = process.env.NODE_ENV === 'production' ? '/words-pictureslander' : '';
+
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert block mx-auto"
-          src="/WP.svg"
+          src={`${prefix}/WP.svg`}
           alt="Words & Pictures Logo"
           width={180}
           height={38}
@@ -27,7 +29,7 @@ export default function Home() {
                   <a href="https://bsky.app/profile/cloudymagpie.bsky.social" target="_blank" rel="noopener noreferrer">
                     <Image
                       className="border-5 border-yellow-500 hover:scale-110 transition-transform duration-300"
-                      src="/winner12024.png"
+                      src={`${prefix}/winner12024.png`}
                       alt="Winner 1"
                       width={150}
                       height={75}
@@ -40,7 +42,7 @@ export default function Home() {
                 <a href="" target="_blank" rel="noopener noreferrer">
                   <Image
                     className="border-5 border-gray-400 hover:scale-110 transition-transform duration-300"
-                    src="/winner22024.png"
+                    src={`${prefix}/winner22024.png`}
                     alt="Winner 2"
                     width={150}
                     height={75}
@@ -49,7 +51,7 @@ export default function Home() {
                 <a href="https://bsky.app/profile/nesokaiyoh.bsky.social" target="_blank" rel="noopener noreferrer">
                   <Image
                     className="border-5 border-amber-700 hover:scale-110 transition-transform duration-300"
-                    src="/winner32024.png"
+                    src={`${prefix}/winner32024.png`}
                     alt="Winner 3"
                     width={150}
                     height={75}
@@ -66,7 +68,7 @@ export default function Home() {
                   <a href="https://bsky.app/profile/cloudymagpie.bsky.social" target="_blank" rel="noopener noreferrer">
                     <Image
                       className="border-5 border-yellow-500 hover:scale-110 transition-transform duration-300"
-                      src="/winner12023.jpg"
+                      src={`${prefix}/winner12023.jpg`}
                       alt="Winner 1"
                       width={100}
                       height={100}
@@ -80,7 +82,7 @@ export default function Home() {
                 <a href="https://x.com/raccoon0ncaf" target="_blank" rel="noopener noreferrer">
                   <Image
                     className="border-5 border-gray-400 hover:scale-110 transition-transform duration-300"
-                    src="/winner22023.png"
+                    src={`${prefix}/winner22023.png`}
                     alt="Winner 2"
                     width={100}
                     height={100}
@@ -90,7 +92,7 @@ export default function Home() {
                 <a href="" target="_blank" rel="noopener noreferrer">
                   <Image
                     className="border-5 border-amber-700 hover:scale-110 transition-transform duration-300"
-                    src="/winner32023.jpg"
+                    src={`${prefix}/winner32023.jpg`}
                     alt="Winner 3"
                     width={100}
                     height={100}
@@ -111,7 +113,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src={`${prefix}/file.svg`}
             alt="File icon"
             width={16}
             height={16}
@@ -126,7 +128,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/bsky.svg"
+            src={`${prefix}/bsky.svg`}
             alt="Window icon"
             width={16}
             height={16}
@@ -142,7 +144,7 @@ export default function Home() {
           <Image
             className=""
             aria-hidden
-            src="/kofi.svg"
+            src={`${prefix}/kofi.svg`}
             alt="Globe icon"
             width={16}
             height={16}

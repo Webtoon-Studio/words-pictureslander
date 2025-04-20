@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from 'next/link';
 
+const prefix = process.env.NODE_ENV === 'production' ? '/words-pictureslander' : '';
+
 export default function GoalsPage() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert block mx-auto"
-          src="/WP.svg"
+          src={`${prefix}/WP.svg`}
           alt="Words & Pictures Logo"
           width={180}
           height={38}
@@ -55,7 +57,7 @@ export default function GoalsPage() {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src={`${prefix}/file.svg`}
             alt="File icon"
             width={16}
             height={16}
@@ -70,7 +72,7 @@ export default function GoalsPage() {
         >
           <Image
             aria-hidden
-            src="/bsky.svg"
+            src={`${prefix}/bsky.svg`}
             alt="Window icon"
             width={16}
             height={16}
@@ -86,7 +88,7 @@ export default function GoalsPage() {
           <Image
             className=""
             aria-hidden
-            src="/kofi.svg"
+            src={`${prefix}/kofi.svg`}
             alt="Globe icon"
             width={16}
             height={16}
