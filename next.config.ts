@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   assetPrefix: isProd ? '/words-pictureslander/' : '',
   images: {
     unoptimized: true, // required for static export
+  }.
 };
 
 export default nextConfig;
