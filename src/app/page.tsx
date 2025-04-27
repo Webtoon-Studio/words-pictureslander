@@ -109,7 +109,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-10 justify-center items-center">
               <a href="https://www.clipstudio.net/en/" target="_blank" rel="noopener noreferrer">
                 <Image
-                  className="hover:scale-110 transition-transform duration-300"
+                  className=""
                   src="/csp_app_icon_.png"
                   alt="Clip Studio Paint"
                   width={70}
@@ -118,7 +118,7 @@ export default function Home() {
               </a>
               <a href="https://www.xp-pen.com/" target="_blank" rel="noopener noreferrer">
                 <Image
-                  className="dark:invert hover:scale-110 transition-transform duration-300"
+                  className="dark:invert"
                   src="/xppen.svg"
                   alt="XP Pen"
                   width={70}
