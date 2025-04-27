@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen !p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert block mx-auto"
@@ -101,6 +101,32 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <section>
+            <h2 className="text-2xl font-semibold mb-2 text-center">Our Partners</h2>
+            <p className="text-lg pb-5 text-center">
+              We are proud to have worked with:
+            </p>
+            <div className="flex flex-wrap gap-10 justify-center items-center">
+              <a href="https://www.clipstudio.net/en/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="hover:scale-110 transition-transform duration-300"
+                  src="/csp_app_icon_.png"
+                  alt="Clip Studio Paint"
+                  width={70}
+                  height={75}
+                />
+              </a>
+              <a href="https://www.xp-pen.com/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="dark:invert hover:scale-110 transition-transform duration-300"
+                  src="/xppen.svg"
+                  alt="XP Pen"
+                  width={70}
+                  height={75}
+                />
+              </a>
+            </div>
+          </section>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
