@@ -102,10 +102,7 @@ export default function Home() {
             </div>
           </div>
           <section>
-            <h2 className="text-2xl font-semibold mb-2 text-center">Our Partners</h2>
-            <p className="text-lg pb-5 text-center">
-              We are proud to have worked with:
-            </p>
+            <strong className="text-2xl font-semibold mb-2 text-center">We are proud to have worked with:</strong>
             <div className="flex flex-wrap gap-10 justify-center items-center">
               <a href="https://www.clipstudio.net/en/" target="_blank" rel="noopener noreferrer">
                 <Image
